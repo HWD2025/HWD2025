@@ -8,7 +8,6 @@
       font-family: 'Segoe UI', sans-serif;
       margin: 0;
       padding: 0;
-      background: #f4f6f7;
     }
     header {
       background: #1565c0;
@@ -43,29 +42,23 @@
   </style>
 </head>
 <body>
-
   <header>
     <h1>Deder General Hospital</h1>
     <p>View Staff Documents Online</p>
   </header>
-
   <div class="container">
-    <!-- Document link -->
     <a href="#" class="doc-link"
        onclick="loadDoc('https://drive.google.com/uc?export=view&id=1-iv6G4VjSrdfUJP61_Z7YsdbNZrH_zYU')">
-      📄 View: Hospital Staff Handbook
+       📄 View: Hospital Staff Handbook
     </a>
-
-    <!-- Display iframe -->
     <iframe id="viewer" src=""></iframe>
   </div>
-
   <script>
     function loadDoc(fileUrl) {
       document.getElementById("viewer").src =
-        "https://docs.google.com/gview?url=" + encodeURIComponent(fileUrl) + "&embedded=true";
+        "https://docs.google.com/gview?url=" +
+        encodeURIComponent(fileUrl) + "&embedded=true";
     }
   </script>
-
 </body>
 </html>
